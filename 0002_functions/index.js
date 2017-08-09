@@ -1,4 +1,4 @@
-// funzioni.js
+// index.js
 
 // function definition
 function square(x)
