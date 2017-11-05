@@ -2,8 +2,8 @@
 
 // using a module
 
-// load lodash module
-// _ is its standard name
+// load "lodash" module
+// "_" is its standard name
 const _ = require('lodash');
 
 // using some functions from lodash module
