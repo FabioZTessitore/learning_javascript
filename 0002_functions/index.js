@@ -1,18 +1,20 @@
 // index.js
 
-// function definition
+// functions
+
+// a function definition
 function square(x)
 {
   return x*x;
 }
 
-// function literal
+// a function literal
 const cube = function (x) {
   return x*x*x;
 };
 
+// main
 const x = 2;
-let result;
 
 console.log('Square of ' + x);
 console.log(square(x));

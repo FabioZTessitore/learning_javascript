@@ -1,11 +1,14 @@
 // index.js
 
-// node index.js
+// basic operations with strings
 
-// console print
+// start with
+// $ node index.js
+
+// print to the console
 console.log('Hello, World!');
 
-// concatenate strings
+// concat
 const msg = "Hello, " + "World!"
 console.log('\nString Concat:');
 console.log(msg);
