@@ -2,13 +2,11 @@
 
 // arrays
 
-// create arrays invoking Array() constructor
+// create an array invoking Array constructor
 const a = new Array(); // empty array
-
 console.log('Empty Array:');
 console.log(a);
-
-// assign
+// set
 a[0] = 2.3;
 a[1] = -1.2;
 console.log('\nAfter assignment:');
@@ -25,11 +23,10 @@ console.log('\na2:');
 console.log(a2);
 
 // invoking Array() with only a single number
-// specifies the length
+// specifies its length
 const a3 = new Array(10);
 console.log('\na3:');
 console.log(a3);
-
 
 // array literal
 const a4 = [
