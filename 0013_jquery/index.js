@@ -11,5 +11,5 @@
 var $ = require('jquery');
 
 $(document).ready(function () {
-    $('#msg').text("Hello, World!");
+    $('#time').text(new Date());
 });
