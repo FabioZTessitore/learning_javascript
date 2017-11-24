@@ -2,6 +2,13 @@
 
 // using a module
 
+// install modules
+// $ npm install
+//
+// start
+// $ node index.js
+
+
 // load "lodash" module
 // "_" is its standard name
 const _ = require('lodash');
