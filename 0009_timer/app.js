@@ -1,6 +1,6 @@
 // app.js
 
-// set current timestamp into an <p id="date"></p>
+// set current timestamp into an <p id="timestamp"></p>
 
 // Warning: here the page DO NOT exists yet!
 
@@ -9,14 +9,14 @@
 // and the callback will be invoked.
 // Note: the callback is defined where we need it!
 document.addEventListener('DOMContentLoaded', function () {
-    var date_p = document.getElementById('date');
-    
-    // change the content of date_p every second
+    var timestamp_p = document.getElementById('timestamp');
+
+    // change the content of timestamp_p every second
     // (using an anonymous callback)
     setInterval( function () {
         var now = new Date();
-        
-        // do not use appendChild()
-        date_p.innerHTML = now;
+
+        // do not use appendChild() !!!
+        timestamp_p.innerHTML = now;
     }, 1000);
 }, false);

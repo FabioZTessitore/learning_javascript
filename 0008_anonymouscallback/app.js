@@ -1,6 +1,6 @@
 // app.js
 
-// set current timestamp into an <p id="date"></p>
+// set current timestamp into an <p id="timestamp"></p>
 
 // Warning: here the page DO NOT exists yet!
 
@@ -9,7 +9,7 @@
 // and the callback will be invoked.
 // Note: the callback is defined where we need it!
 document.addEventListener('DOMContentLoaded', function () {
-    var date_p = document.getElementById('date');
+    var timestamp_p = document.getElementById('timestamp');
     var now = new Date();
-    date_p.appendChild(document.createTextNode(now));
+    timestamp_p.appendChild( document.createTextNode(now) );
 }, false);
