@@ -1,14 +1,4 @@
-// index.js
-
-// this is the main file
-// use browserify to bundle the app
-//
-// $ browserify index.js -o app.js
-
-
-// require() is available on the client
-// thanks to browserify!
-var $ = require('jquery');
+// app.js
 
 $(document).ready(function () {
   var fruitsList = $('#fruits');
@@ -18,23 +8,29 @@ $(document).ready(function () {
     fruits.sort( function (n, m) {
       return $(n).text() > $(m).text();
     });
-    fruitsList.html(fruits);
+    fruits.each( function (index, fruit) {
+      $(fruit).appendTo(fruitsList);
+    });
   });
 
   var rankingTable = $('#ranking');
-  var rankingTBody = rankingTable.find('tbody');
+  var rankingTBody = rankingTable.children('tbody');
   var rankingRows = rankingTBody.children('tr');
 
   $('#sort-by-name').on('click', function () {
     rankingRows.sort( function (n, m) {
       return $(n).find('.name').text() > $(m).find('.name').text();
     });
-    rankingTBody.html(rankingRows);
+    rankingRows.each( function (index, row) {
+      $(row).appendTo(rankingTBody);
+    });
   });
   $('#sort-by-points').on('click', function () {
     rankingRows.sort( function (n, m) {
       return parseInt($(n).find('.points').text()) > parseInt($(m).find('.points').text());
     });
-    rankingTBody.html(rankingRows);
+    rankingRows.each( function (index, row) {
+      $(row).appendTo(rankingTBody);
+    });
   });
 });
