@@ -2,7 +2,10 @@
 
 // using a module
 
-// install modules
+// to install the module 'lodash'
+// $ npm install lodash
+
+// to update node_modules directory
 // $ npm install
 //
 // start
