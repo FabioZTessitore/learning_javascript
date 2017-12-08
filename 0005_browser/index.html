@@ -5,20 +5,20 @@
     <meta charset="utf-8">
     <title>Date</title>
   </head>
-  
+
   <body>
-    <h1>Che ora è?</h1>
-    <p id="date"></p>
-    
+    <h1>What time is it?</h1>
+    <p id="timestamp"></p>
+
     <script>
     // here the page already exists!
-    
-    // look for <p id="date"></p>
-    var date_p = document.getElementById('date');
-    
+
+    // look for <p id="timestamp"></p>
+    var timestamp_p = document.getElementById('timestamp');
+
     // add content
     var now = new Date();
-    date_p.appendChild(document.createTextNode(now));
+    timestamp_p.appendChild( document.createTextNode(now) );
     </script>
   </body>
 </html>

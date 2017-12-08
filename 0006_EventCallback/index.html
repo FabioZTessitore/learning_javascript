@@ -4,29 +4,29 @@
   <head>
     <meta charset="utf-8">
     <title>Date</title>
-    
+
     <script>
     // here the page DO NOT exists yet!
 
-    // group operations in a function, our callback
-    var setDate = function () {
-        // look for <p id="date"></p>
-        var date_p = document.getElementById('date');
-    
+    // groups operations in a function, our callback
+    var setTimestamp = function () {
+        // look for <p id="timestamp"></p>
+        var timestamp_p = document.getElementById('timestamp');
+
         // add content
         var now = new Date();
-        date_p.appendChild(document.createTextNode(now));
+        timestamp_p.appendChild( document.createTextNode(now) );
     }
-    
+
     // register an event listener on document object
     // When the document will be loaded a DOMContentLoaded event will be raised
-    // and the callback setDate will be invoked
-    document.addEventListener('DOMContentLoaded', setDate, false);
+    // and the callback setTimestamp will be invoked
+    document.addEventListener('DOMContentLoaded', setTimestamp, false);
     </script>
   </head>
-  
+
   <body>
-    <h1>Che ora è?</h1>
-    <p id="date"></p>
+    <h1>What time is it?</h1>
+    <p id="timestamp"></p>
   </body>
 </html>
