@@ -22,8 +22,7 @@ const a2 = new Array(
 console.log('\na2:');
 console.log(a2);
 
-// invoking Array() with only a single number
-// specifies its length
+// invoking Array() with only a single number specifies its length
 const a3 = new Array(10);
 console.log('\na3:');
 console.log(a3);
