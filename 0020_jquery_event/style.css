@@ -1,0 +1,30 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.box {
+  margin: 1em auto;
+  padding: 2em;
+  background-color: #aaa;
+  width: 20em;
+  color: #020;
+  border-radius: 5px;
+}
+
+.box a {
+  text-decoration: none;
+  pointer: cursor;
+  color: green;
+}
+
+.box ul {
+  list-style-type: none;
+  display: none;
+}
+
+.box ul li {
+  padding: 5px;
+}
